@@ -20,10 +20,10 @@ interface HomeProps {
 
 export default function Home({ products }: HomeProps) {
   const [sliderRef] = useKeenSlider({
-    mode: 'snap', 
+    mode: 'free-snap', 
     slides: {
       perView: 'auto',
-      spacing: 48
+      spacing: 45,
     }
   })
 
